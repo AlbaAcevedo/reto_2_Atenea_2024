@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu" 
+        android:contentDescription="Menu"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service Register"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back" 
+        android:contentDescription="Back"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/service_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del servicio"
+        android:layout_marginTop="20dp"/>
+
+    <ImageButton
+        android:id="@+id/star_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_star" 
+        android:contentDescription="Star"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"/>
+
+    <Spinner
+        android:id="@+id/service_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/service_categories"
+        android:layout_below="@id/service_name"
+        android:layout_marginTop="10dp"/>
+
+    <ImageButton
+        android:id="@+id/check_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_check" 
+        android:contentDescription="Check"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/service_category"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/service_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción del servicio..."
+        android:layout_below="@id/service_category"
+        android:layout_marginTop="10dp"
+        android:lines="6"/>
+
+    <ImageButton
+        android:id="@+id/audio_description_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_audio_description" 
+        android:contentDescription="Audio Description"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/service_description"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/service_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Selecciona una fecha"
+        android:layout_below="@id/service_description"
+        android:layout_marginTop="10dp"/>
+
+    <ImageButton
+        android:id="@+id/calendar_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_calendar" 
+        android:contentDescription="Calendar"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/service_date"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_below="@id/service_date"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_google" 
+            android:contentDescription="Google"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_facebook" 
+            android:contentDescription="Facebook"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_apple" 
+            android:contentDescription="Apple"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
